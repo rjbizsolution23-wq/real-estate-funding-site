@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
   // Configure for server deployment
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
 };
 

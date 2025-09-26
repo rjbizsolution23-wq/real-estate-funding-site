@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://rjbizsolution23-wq.github.io/real-estate-funding-site/sitemap.xml

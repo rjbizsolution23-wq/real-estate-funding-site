@@ -6,7 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { useToast } from '@/hooks/use-toast';
-import { CheckCircle, Building2, TrendingUp, Clock, Users, Star, ArrowRight, Phone, Mail } from 'lucide-react';
+import { CheckCircle, Building2, TrendingUp, Clock, Users, Star, ArrowRight, Phone, Mail, ImageIcon } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({ days: 2, hours: 14, minutes: 32, seconds: 45 });
@@ -38,6 +39,13 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-800 via-emerald-700 to-teal-800 opacity-95"></div>
         <div className="absolute inset-0 bg-black/20"></div>
+        <Image
+          src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1600&auto=format&fit=crop&q=60"
+          alt="Modern real estate skyline representing investor funding opportunities"
+          fill
+          className="object-cover opacity-25"
+          priority
+        />
         
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-600 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
@@ -189,6 +197,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
+                <div className="mb-4 relative w-full h-40">
+                  <Image
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=60"
+                    alt="Rental property financed through investor program"
+                    fill
+                    className="object-cover rounded-md"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -213,6 +229,14 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
+                <div className="mb-4 relative w-full h-40">
+                  <Image
+                    src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c54a?w=800&auto=format&fit=crop&q=60"
+                    alt="Duplex investment financed with competitive terms"
+                    fill
+                    className="object-cover rounded-md"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -237,6 +261,14 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
+                <div className="mb-4 relative w-full h-40">
+                  <Image
+                    src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&auto=format&fit=crop&q=60"
+                    alt="Portfolio expansion across multiple properties"
+                    fill
+                    className="object-cover rounded-md"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />

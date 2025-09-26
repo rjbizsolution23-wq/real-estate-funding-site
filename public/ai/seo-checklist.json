@@ -1,0 +1,18 @@
+{
+  "title": "Full-Site SEO Checklist",
+  "version": 1,
+  "items": [
+    "Unique title and meta description on every page",
+    "Canonical URLs set",
+    "Open Graph/Twitter images configured",
+    "Responsive images with descriptive alt text",
+    "JSON-LD Organization + Service + FAQ schemas",
+    "Sitemap.xml and robots.txt updated",
+    "No broken links or console errors",
+    "Good Core Web Vitals (LCP, CLS, INP)",
+    "Internal links between key sections",
+    "Forms and CTAs function correctly"
+  ]
+}
+
+
