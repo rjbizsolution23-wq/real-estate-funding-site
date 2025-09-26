@@ -233,12 +233,13 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-6 relative w-full h-48">
+                <div className="mb-6 relative w-full h-48 overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=60"
                     alt="Rental property financed through investor program"
                     fill
                     className="object-cover rounded-md"
+                    priority={false}
                   />
                 </div>
                 <div className="flex items-center mb-4">
@@ -265,12 +266,13 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-6 relative w-full h-48">
+                <div className="mb-6 relative w-full h-48 overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c54a?w=800&auto=format&fit=crop&q=60"
+                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=60"
                     alt="Duplex investment financed with competitive terms"
                     fill
                     className="object-cover rounded-md"
+                    priority={false}
                   />
                 </div>
                 <div className="flex items-center mb-4">
@@ -297,12 +299,13 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-6 relative w-full h-48">
+                <div className="mb-6 relative w-full h-48 overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&auto=format&fit=crop&q=60"
                     alt="Portfolio expansion across multiple properties"
                     fill
                     className="object-cover rounded-md"
+                    priority={false}
                   />
                 </div>
                 <div className="flex items-center mb-4">
