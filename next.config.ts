@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
     // 构建时忽略ESLint错误
     ignoreDuringBuilds: true,
   },
+  // Configure for server deployment
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
