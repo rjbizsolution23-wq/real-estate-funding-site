@@ -155,30 +155,66 @@ export default function Home() {
               <CardHeader className="bg-gradient-to-r from-emerald-50 to-teal-50 border-b">
                 <CardTitle className="text-2xl text-slate-900">Investor Funding Application</CardTitle>
                 <CardDescription className="text-slate-600">
-                  Fill out the form below to get started with your funding application
+                  Click the button below to access our secure funding application
                 </CardDescription>
               </CardHeader>
               
-              <CardContent className="p-0">
-                <div className="relative" style={{ height: '1525px' }}>
-                  <iframe
-                    src="https://api.rjbusinesssolutions.org/widget/form/OtowqG7F0TXY10ErYZc3"
-                    style={{ width: '100%', height: '100%', border: 'none', borderRadius: '0 0 0.625rem 0.625rem' }}
-                    id="inline-OtowqG7F0TXY10ErYZc3" 
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="INITIAL LEAD CAPTURE"
-                    data-height="1525"
-                    data-layout-iframe-id="inline-OtowqG7F0TXY10ErYZc3"
-                    data-form-id="OtowqG7F0TXY10ErYZc3"
-                    title="INITIAL LEAD CAPTURE"
+              <CardContent className="p-12 text-center">
+                <div className="mb-8">
+                  <Image
+                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=60"
+                    alt="Professional funding application process"
+                    width={400}
+                    height={300}
+                    className="mx-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Ready to Get Funded?</h3>
+                  <p className="text-lg text-slate-600 mb-8">
+                    Our secure application takes just 5 minutes to complete and includes:
+                  </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-8 text-left">
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Personal & Business Information</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Credit Score Assessment</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Income Verification</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Investment Experience</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Funding Amount Needed</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-slate-700">Timeline Requirements</span>
+                    </div>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white text-xl px-12 py-6 rounded-full font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
+                    onClick={() => window.open('https://api.rjbusinesssolutions.org/widget/form/OtowqG7F0TXY10ErYZc3', '_blank')}
                   >
-                  </iframe>
+                    Start Your Application Now
+                    <ArrowRight className="w-6 h-6 ml-2" />
+                  </Button>
+                  
+                  <p className="text-sm text-slate-500 mt-4">
+                    Secure • Fast • No Obligation
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -197,7 +233,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-4 relative w-full h-40">
+                <div className="mb-6 relative w-full h-48">
                   <Image
                     src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=60"
                     alt="Rental property financed through investor program"
@@ -229,7 +265,7 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-4 relative w-full h-40">
+                <div className="mb-6 relative w-full h-48">
                   <Image
                     src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c54a?w=800&auto=format&fit=crop&q=60"
                     alt="Duplex investment financed with competitive terms"
@@ -261,7 +297,7 @@ export default function Home() {
             
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="mb-4 relative w-full h-40">
+                <div className="mb-6 relative w-full h-48">
                   <Image
                     src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&auto=format&fit=crop&q=60"
                     alt="Portfolio expansion across multiple properties"
